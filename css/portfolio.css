@@ -1,0 +1,95 @@
+
+
+.content{
+    height: 99vh; 
+    margin: 14vh auto; 
+    position: relative;
+}
+.title2{
+    font-size: 4vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+}
+
+.background{
+    position: absolute;
+    z-index: 0;
+    left: 0px;
+    width: 100%;
+}
+
+.foreground{
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    width: 100%;
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 900;
+    background-color: black;
+}
+
+
+.black{
+    color: black;
+}
+
+@keyframes rotate {
+    0%   {-webkit-transform: rotate(0deg);}
+    100%   {-webkit-transform: rotate(2160deg);}
+}
+  .rotation2{
+      color: black;
+  }
+  /* The element to apply the animation to */
+  .rotation2:hover {
+    animation-name: rotate;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    z-index: 2;
+}
+
+
+  
+@media screen and (max-width: 576px) {
+   
+    
+.header{
+    position: absolute;
+    z-index: 6;
+    margin-top: 0px;
+}
+
+}
+
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  
+  a {
+    color: #00B7FF;
+  }
+
+  .casket{
+      top: 40vh;
+  }
+
+  #carouselContainer{
+      min-height: 100%;    
+      max-height: 80vh;
+      overflow: hidden;
+      display: block;
+  }
+
+#biographyContainer{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+  .footer{
+      background-color: black;
+      bottom: 0;
+      position: fixed;
+      left: 0;
+  }

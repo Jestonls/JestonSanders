@@ -1,0 +1,285 @@
+.app{
+    border: orange solid 1vw;
+    border: 5px solid red dashed;
+    max-width: 98%;
+    width: 98%;
+    height: 80%;
+    position: absolute;
+    display: block;
+    z-index: 3;
+}
+
+
+
+
+#shape{
+    top: 10%;
+    display: block;
+    position: relative;
+    max-height: 100%;
+    overflow: hidden;
+    /* color: black; */
+    fill: none;
+    z-index: 3;
+    stroke:white;
+    stroke-width:5;
+    fill-rule:nonzero;
+      }
+  
+#application{
+    overflow: hidden;
+    z-index: 3;
+    left: 0;
+    top:10%;
+    max-height: 100%;
+    display: block;
+    
+}
+
+body{
+    background-color: #000000;
+}
+
+
+
+a{
+    color: tomato;
+}
+
+table td,table th{
+    padding:0
+}
+
+
+.name{
+    color: white;
+    /* text-shadow: red .1vw .1vw; */
+    /* font-weight: 800; */
+    text-decoration:none;
+    vertical-align: baseline;
+    font-size:4vw;
+    letter-spacing: 1vw;
+    font-family: "Arial" ;
+    font-style:normal;
+    text-align: center;
+    min-width: 100%;
+    left: 0;
+    position: absolute;
+    display: block;
+    z-index: 3;
+    top: 0%;
+    font-variant: small-caps;
+}
+    
+.c5{
+    color:#ffffff;
+    font-weight:400;
+    text-decoration:none;
+    vertical-align:baseline;
+    font-size:2vh;
+    font-family:"Arial";
+    font-style:normal;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.c3{
+    padding-top:0pt;
+    padding-bottom:0pt;
+    line-height:2.0;
+    orphans:2;
+    widows:2;
+    text-align:right;
+    font-weight:400;
+    text-decoration:none;
+    vertical-align:baseline;
+    font-size:2vh;
+    font-family:"Arial";
+    font-style:normal;
+    bottom: 0;
+}
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    .c3 {
+        font-size: 4vh;
+        display: block;
+        position: absolute;
+        right: 0px;
+        bottom: -30vh;
+
+      }
+      .c5{
+          position: absolute;
+      left: 0px;
+        bottom: -40vh;
+        }
+      body {
+        max-height: 70%;
+        position: absolute;
+        max-width: 100%;
+        width: 70%;
+        left: 5%;
+        height: 100%;
+      }
+  }
+  
+  @media only screen and (max-width: 599px) {
+    .c5 {
+      font-size: 2vh;
+    }
+  }
+
+.c6{
+    height:11pt
+}
+
+.title{
+    padding-top:0pt;
+    color:#000000;
+    font-size:26pt;
+    padding-bottom:3pt;
+    line-height:1.15;
+    page-break-after:avoid;
+    orphans:2;
+    widows:2;
+    text-align:left
+}
+
+.subtitle{
+    padding-top:0pt;
+    color:#666666;
+    font-size:15pt;
+    padding-bottom:16pt;
+    font-family:"Arial";
+    line-height:1.15;
+    page-break-after:avoid;
+    orphans:2;
+    widows:2;
+    text-align:left
+}
+
+li{
+    color:#000000;
+    font-size:11pt;
+    font-family:"Arial"
+}
+
+p{
+    margin:0;
+    color:#000000;
+    font-size:11pt;
+    font-family:"Arial"
+}
+
+h1{
+    padding-top:20pt;
+    color:#000000;
+    font-size:20pt;
+    padding-bottom:6pt;
+    font-family:"Arial";
+    line-height:1.15;
+    page-break-after:avoid;
+    orphans:2;
+    widows:2;
+    text-align:left
+}
+    h2{
+        padding-top:18pt;
+        color:#000000;
+        font-size:16pt;
+        padding-bottom:6pt;
+        font-family:"Arial";
+        line-height:1.15;
+        page-break-after:avoid;
+        orphans:2;widows:2;
+        text-align:left
+    }
+    
+    h3{
+        padding-top:16pt;
+        color:#434343;
+        font-size:14pt;
+        padding-bottom:4pt;
+        font-family:"Arial";
+        line-height:1.15;
+        page-break-after:avoid;
+        orphans:2;widows:2;
+        text-align:left
+    }
+    
+    h4{
+        padding-top:14pt;
+        color:#666666;
+        font-size:12pt;
+        padding-bottom:4pt;
+        font-family:"Arial";
+        line-height:1.15;
+        page-break-after:avoid;
+        orphans:2;
+        widows:2;
+        text-align:left
+    }
+    
+    h5{
+        padding-top:12pt;
+        color:#666666;
+        font-size:11pt;
+        padding-bottom:4pt;
+        font-family:"Arial";
+        line-height:1.15;
+        page-break-after:avoid;
+        orphans:2;widows:2;
+        text-align:left
+    
+}
+
+h6{
+    padding-top:12pt;
+    color:#666666;
+    font-size:11pt;
+    padding-bottom:4pt;
+    font-family:"Arial";
+    line-height:1.15;
+    page-break-after:avoid;
+    font-style:italic;
+    orphans:2;
+    widows:2;
+    text-align:left}
+
+.midGround{
+    min-width: 130%;
+    left: -15%;
+    max-width: 100%;
+    opacity: 1;
+    position: absolute;
+    z-index: 3;
+    top: 0%;
+}
+
+.frame0{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    max-width: 100%;
+    z-index: 3;
+}
+.frame2{
+    position: absolute;
+    bottom: 0;
+    width: 90vw;
+    left: 0;
+    min-width: 100%;
+    max-width: 100%;
+    z-index: 3;
+}
+
+#morphing{
+    left: 35%;
+    min-width: 30%;
+    top: 30%;
+    position: absolute;
+    display: block;
+    z-index: 7;
+}

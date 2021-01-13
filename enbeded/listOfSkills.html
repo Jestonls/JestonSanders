@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<head>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="../css/about.css"></head>
+</head>
+
+<div id="skillList">
+<div class='row'>
+<div id='first' class='d-sm-none d-md-block col-sm-12 col-md-6 col-lg-6'>
+</div>
+<div id='backImg' class='col-lg-2 col-md-2 img-responsive'>
+</div>
+
+
+<div class=' col-md-6 col-lg-6 navGallery'>
+<h4 id='list-item-1'>
+<div class='text-center text-uppercase p-2 displayHeaderSmall'>
+
+</div>
+</h4>
+
+
+<div class='row '>
+<div id='galleryskillsWeb' class='col-lg-12 col-md-12 scrollXSmall'>
+</div>
+</div>
+
+<h4 id='list-item-2'>
+<div class='text-center text-uppercase p-2 displayHeaderSmall'>
+Projects
+</div>
+</h4>
+
+<div class='row'>
+<div id='galleryWeb' class='col-lg-12 col-md-12 scrollXSmall'>
+</div>
+<div id='websites' class='col-lg-12 col-md-12 scrollXSmall'>
+</div>
+
+</div>
+
+<div class='text-center text-uppercase p-2 displayHeaderSmall'>
+<h4 id='list-item-3'>
+<span>&#169;</span>
+
+</h4>
+</div>
+
+<div class='row'>
+<div id='galleryGd' class='col-lg-12 col-md-12 scrollXSmall'>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+$("#skillList").append(skillList);
+
+var portfolioWeb = [
+    { name: "crystal" ,link: "../images/unit-4.png"},
+    { name: "trivia" ,link: "../images/Trivia-Game.png"},
+    { name: "train" ,link: "../images/train.png"},
+    { name: "psychic" ,link: "../images/Psychic-Game.png"},
+    { name: "giftastic" ,link: "../images/giftastic-0.png"},
+    { name: "portfolio" ,link: "../images/venus.png"}
+    ];
+    
+    for (let j = 0; j < portfolioWeb.length; j++) {
+    var img = $('<img class="img-responsive col-lg-2 col-md-2 col-sm-2 col-4 btn btn-lg border border-light btn btn-danger" type="button" data-toggle="popover" title="Popover title" data-content="And heres some amazing content. Its very engaging. Right?">');
+// at some point i will have to make the data content of everydescription a link to external txt file.
+// in fact this gives me an idea of hosting books making a book website with text file
+
+    img.attr('src', portfolioWeb[j].link);
+    img.hover(
+      function () {
+        $('#first').text(portfolioWeb[j].name).css({'font-size' : '10vh', 'overflow': 'hidden', 'text-align': 'center', 'position': 'absolute', 'height': '100%', 'color':'red', 'padding-top':'25vh', 'z-index':'4'});
+        $('#backImg').html($("<img class='col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive'>").attr("src", portfolioWeb[j].link));  
+      });
+      img.appendTo('#galleryWeb');
+    }
+    
+  
+    var portfolioGd = [
+    { name: "graphic design" ,link: "../images/logo1.png"},
+    { name: "conceptual design" ,link: "../images/logoBranding.jpg"},
+    { name: "storyboarding" ,link: "../images/newbrand3.png"}
+      ];
+    
+    for (let k = 0; k < portfolioGd.length; k++) {
+      var img3 = $('<img class="btn img-responsive col-lg-4 col-md-4 col-sm-2 col-4 btn-light btn-outline-primary" type="button" data-toggle="popover" data-placement="bottom" title="smut" data-content="And heres some amazing content. Its very engaging. Right?">');
+    img3.attr({'src': portfolioGd[k].link, 'title': portfolioGd[k].name});
+    img3.hover(
+      function () {
+        $('#first').text(portfolioGd[k].name).css({'font-size' : '10vh', 'overflow': 'hidden', 'text-align': 'center', 'position': 'absolute', 'height': '100%', 'color':'black', 'padding-top':'25vh'});
+        $('#backImg').html($("<img class='col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive'>").attr("src", portfolioGd[k].link));
+      });
+    img3.appendTo('#galleryGd');
+// var img3Small = $('<img class="img-responsive col-lg-4 col-md-4 col-sm-2 col-4">');
+// img3Small.attr('src', portfolioGd[k].link);
+// img3Small.appendTo('#galleryGd');
+
+  }
+    
+    var skillsWeb = [
+    { name: "bootstrap" ,link: "../images/webskills/Boostrap_logo.svg"},
+    { name: "html5" ,link: "../images/webskills/HTML5_logo_and_wordmark.svg"},
+    { name: "css3" ,link: "../images/webskills/CSS3_logo_and_wordmark.svg"},
+    { name: "javascript" ,link: "../images/webskills/Unofficial_JavaScript_logo_2.svg"},
+    { name: "jquery" ,link: "../images/webskills/Logo_jQuery.svg"},
+    { name: "react" ,link: "../images/webskills/React-icon.svg"},
+    { name: "gitbash" ,link: "../images/webskills/Git-logo.svg"},
+    { name: "github" ,link: "../images/webskills/Github.com-SunghanKim.png"},
+    { name: "node.js" ,link: "../images/webskills/Node.js_logo.svg"},
+    { name: "heroku" ,link: "../images/webskills/Logo_di_Heroku.png"},
+    { name: "mysql" ,link: "../images/webskills/Database-mysql.svg"},
+    { name: "json" ,link: "../images/webskills/JSON_vector_logo.svg"}
+      ];
+    
+    for (let w = 0; w < skillsWeb.length; w++) {
+    var img4 = $('<img class="img-responsive col-lg-2 col-md-2 col-sm-2 col-4 btn-light btn-outline-primary border border-light" type="button" onclick="clickButtonHandler(this)">');
+    img4.attr({src: skillsWeb[w].link,
+    "data-value": skillsWeb[w].name});
+    img4.hover(
+    function () {
+    $('#first').text(skillsWeb[w].name).css({'font-size' : '10vh', 'overflow': 'hidden', 'text-align': 'center', 'position': 'absolute', 'height': '100%', 'color':'lightblue', 'padding-top':'25vh', 'z-index':'4' });
+    $('#backImg').html($("<img class='col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive'>").attr("src", skillsWeb[w].link));
+    });
+    img4.appendTo('#galleryskillsWeb');  
+    }
+
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+
+    $(function () {
+      $('.example-popover').popover({
+        container: 'body'
+      })
+    })
+</script>
+
+
+<script>
+
+
+    
+    var websites = [
+        { name: "Portfolio Pages" ,link: "https://jestonls.github.io/Updated-Portfolio-Page/"},
+        { name: "Friend Finder App" ,link: "https://ancient-waters-96999.herokuapp.com/"},
+        { name: "Group Project 2" ,link: "https://calm-lake-59280.herokuapp.com/"}
+        ]
+      
+      websites.forEach(element => {
+        console.log(element.name);
+        ($("<button target='_blank'>" + element.name + "</button>").attr("href", element.link).addClass("btn btn-outline-danger col-lg-3 col-md-3 col-sm-3 col-xs-4 mt-5")).prependTo("#websites");
+        });
+        
+      var Clicked = false;
+      $('.change').click(function(){
+      Clicked = true;
+      });   
+      
+      $('.change').click(function()
+      {
+      if (Clicked = true){
+      window.open(this.getAttribute("href"),'_blank');
+      }
+      });
+      </script>
+
+
+<script src="" async defer></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

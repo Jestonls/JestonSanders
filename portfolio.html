@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/footeranimations.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../Web Development/Portfolio/blackhound/circuit.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+<header class="text-center text-dark p-2 sticky-top row border-bottom border-danger border-3" id="header">
+<div class="col-lg-6 col-md-6 col-sm-6 col-6 text-center headerText mt-2">Jeston Sanders</div>
+<nav class='col-lg-6 col-md-6 col-sm-6 col-6 text-center border-left border-3 border-primary smallNav'>
+<div class="row">
+  <a class='m-2 col-xs-4' href='#list-item-a'>
+Web Development
+</a>
+<a class='m-2 col-xs-4' href='#list-item-b'>
+Samples
+</a>
+<a class='m-2 col-xs-4' href='#list-item-c'>
+Biography
+</a>
+<a class='m-2 col-xs-4' href='#list-item-d'>
+Contact
+</a>
+</div>
+</nav>
+</header>
+
+
+<div data-spy='scroll' data-target='#list-example' data-offset='0' class='scrollspy-example carouselScriptb'>
+
+<div id='list-item-a'>  
+<iframe src="./enbeded/listOfSkills.html" style="width:100%;height:100vh;display:block;overflow:hidden;" sandbox="allow-same-origin allow-scripts allow-forms" scrolling="no"></iframe>
+
+</div>
+<div id="list-item-b">
+<iframe src="./enbeded/carouselScriptb.html" style="width:100%;height:100vh;display:block;overflow:hidden;" sandbox="allow-same-origin allow-scripts allow-forms" scrolling="no"></iframe>
+</div>
+
+<div id="list-item-c">
+<iframe src="./enbeded/biography.html" style="width:100%;height:100vh;display:block;overflow:hidden;" sandbox="allow-same-origin allow-scripts allow-forms" scrolling="no"></iframe>
+</div>
+    
+<div id="list-item-d">
+
+<div class='row' id="footer">
+<div class='col-lg-6 col-md-6 mt-4'> 
+  <h1 class="text-center">
+    Jeston Sanders
+  </h1>
+  <h4 class="text-center">
+    Web Developer, Graphic Designer, Print Specialist
+  </h4>
+  <h4 class="text-center">
+Bay Area & Sacramento
+  </h4>
+  
+        <h3 class='text-center'>
+  
+  <button class="btn btn-lg border border-light btn btn-danger mb-3" id="contact">contact</button>
+
+<embed id="contactForm" src="./enbeded/footerForm.html" style="width:100%;height:100vh;display:block;visibility:hidden;right:50%;z-index: 3;" sandbox="allow-same-origin allow-scripts allow-forms" scrolling="no"></iframe>
+</h3>
+<div id='second' class='text-center text-dark'>
+</div>
+</h2>
+</div>
+<div class='col-lg-6 col-md-6   mt-4 border-left'> 
+<div class="col-lg-12 col-md-12">
+
+
+<a target='_blank'>
+<div id='links2'>
+</div>
+
+</a> 
+<h2>
+</div>
+</div>
+
+</div>
+
+<script>
+  var contactLinks = [
+    { name: "contact", link: "mailto:jestonls@gmail.com", icon: "./images/webskills/Gmail_Icon.svg", picture: "./images/webskills/Gmail_Icon.svg"},
+    { name: "linkedIn", link: "https://www.linkedin.com/in/jeston/", icon: "./images/webskills/Linkedin_icon.svg", picture: "./images/linkedin.jpg"},
+    { name: "github", link: "https://github.com/Jestonls", icon: "./images/gdskills/GitHub-Mark.png", picture: "./images/linkedin.jpg"},
+      ];
+      
+      contactLinks.forEach(element => {
+      console.log(element.name);
+    var imgContactLinks = $("<img class='col-lg-2 col-md-2 col-sm-2 col-xs-4 col-4 offset-lg-1 offset-md-1'>").attr("src", element.icon).appendTo("#links2").wrap($("<a target='_blank'>").attr({"href": element.link}));
+    
+    // imgContactLinks.hover(
+    // function () {
+    //   $('#second').text(element.name);
+    //   $('#secondImg').html($("<img>").attr("src", element.picture).addClass("col-lg-8 col-md-8 col-sm-8 col-xs-8 img-responsive"));
+    //   });  
+  });
+
+  $('#contact').on('click', function (e) {
+
+    $('#contactForm').css("visibility", "visible");
+  
+  })
+  </script>        
+  
+</div>
+<script src="./javascripts/app.js"> 
+
+
+</script>
+
+  
+  <script src="" async defer></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

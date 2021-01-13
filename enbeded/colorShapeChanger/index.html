@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+    </head>
+
+<body class="bg-dark">
+
+<div id="application" class="app bg-outline-secondary"  type="button" value="PLAY" onclick="play()"> 
+
+<div id="shape"></div>
+</div>
+
+<script>
+  var randomColors = [ 
+{name: "red" ,rgb: ["rgb(245,66,66)"]},
+{name: "yellow" ,rgb: ["rgb(245,245,66)"]},
+{name: "lime" ,rgb: ["rgb(66,245,66)"]},
+{name: "topz" ,rgb: ["rgb(66,245,245)"]},
+{name: "purple" ,rgb: ["rgb(66,66,245)"]},
+{name: "fushia" ,rgb: ["rgb(245,66,245)"]}
+];
+
+for (let i = 0; i < randomColors.length; i++) {
+    function nextItem() {
+    i = i + 1; // increase i by one
+    i = i % randomColors.length; // if we've gone too high, start from `0` again
+    return randomColors[i]; // give us back the item of where we are now
+}
+
+
+$( "#application" ).click(function() {
+nextItem($(this).css('background-color', randomColors[i].rgb));
+});
+}
+
+var randomShapes = [
+    {name: "circle" ,svg: "<svg viewbox='-180 -60 360 360'>" + "<circle cx='0' cy='0' r='60' width='60' height='60'/>" + "</svg>"},
+    {name: "triangle" ,svg: "<svg viewbox='-90 -5 360 180'>" + "<polygon points='90,0 0,90 180,90' width='50' height='50'/>" + "</svg>"},
+    {name: "pyramid" ,svg: "<svg viewbox='-110 -5 360 360'>" + "<polygon points='70,0 140,70 70,115 0,70' width='50' height='50'/>" + "</svg>"},
+    {name: "polygon" ,svg: "<svg viewbox='-120 -5 360 360'>" + "<polygon points='120.5,52.3 90.5,104.3 30.5,104.3 .5,52.3 30.5,.37 90.5,.37 120.5,52.3' width='50' height='50'/>"  + "</svg>"},
+    {name: "star" ,svg: "<svg viewbox='-130 0 360 180'>" + "<polygon points='50,5 20,99 95,39 5,39 80,99' width='50' height='50'/>"  + "</svg>"},
+    {name: "square" ,svg: "<svg viewbox='-65 -5 180 180'>" + "<rect x='0' y='0' rx='0' ry='0' width='50' height='50'/>"  + "</svg>"},
+    {name: "bevelledSquare" ,svg: "<svg viewbox='-65 -5 180 720'>" + "<rect x='0' y='0' rx='10' ry='10' width='50' height='50'/>"  + "</svg>"},
+   
+];
+
+var randomSounds = [
+    {name: "zap" ,source: "<audio id='audio' src='./css/zap01.ogg' >" + "</audio>"},
+];
+
+{/* <rect x="60" y="10" rx="10" ry="10" width="30" height="30"/> */}
+
+
+var shapeShifter = randomShapes[0].svg;
+var soundChanger = randomSounds[0].source;
+    
+    for (let j = 0; j < randomShapes.length; j++) {
+
+    function nextItem() {
+        j = j + 1;
+        j = j % randomShapes.length;
+        return randomShapes[j];
+    }   
+
+    $( "#shape" ).click(function() {
+        nextItem($(this).html(randomShapes[j].svg));
+        });
+       
+    $(shapeShifter).appendTo('#shape');
+ }
+
+    function play(){
+        var audio = document.getElementById("audio");
+
+        audio.play();
+                  }
+
+</script>
+
+<script src="" async defer></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
