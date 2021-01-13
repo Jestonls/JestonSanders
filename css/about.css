@@ -46,7 +46,7 @@
     left: 10vw;
 }
 @media screen and (max-width: 576px) {
-    
+
     
     #list-item-b{
         display: none;
@@ -129,8 +129,8 @@
     /* padding not working on external scrollspy; */
     min-height: 100vh;
     position: relative;
-    overflow: scroll;
     border: #000 solid 1px;
+    
 }
 
 .huge{
