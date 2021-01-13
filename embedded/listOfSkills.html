@@ -91,7 +91,7 @@ var portfolioWeb = [
       ];
     
     for (let k = 0; k < portfolioGd.length; k++) {
-      var img3 = $('<img class="btn img-responsive col-lg-4 col-md-4 col-sm-2 col-4 btn-light btn-outline-primary" type="button" data-toggle="popover" data-placement="bottom" title="smut" data-content="And heres some amazing content. Its very engaging. Right?">');
+      var img3 = $('<img class="btn img-responsive col-lg-4 col-md-4 col-sm-2 col-xs-6 col-4 btn-light btn-outline-primary" type="button" data-toggle="popover" data-placement="bottom" title="smut" data-content="And heres some amazing content. Its very engaging. Right?">');
     img3.attr({'src': portfolioGd[k].link, 'title': portfolioGd[k].name});
     img3.hover(
       function () {
@@ -121,7 +121,8 @@ var portfolioWeb = [
       ];
     
     for (let w = 0; w < skillsWeb.length; w++) {
-    var img4 = $('<img class="img-responsive col-lg-2 col-md-2 col-sm-2 col-4 btn-light btn-outline-primary border border-light" type="button" onclick="clickButtonHandler(this)">');
+    var img4 = $('<img class="img-responsive col-lg-2 col-md-2 col-sm-2 col-4 col-xs-6" type="button">');
+    // onclick="clickButtonHandler(this)">');
     img4.attr({src: skillsWeb[w].link,
     "data-value": skillsWeb[w].name});
     img4.hover(

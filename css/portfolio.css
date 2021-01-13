@@ -29,27 +29,9 @@
     background-color: black;
 }
 
-
 .black{
     color: black;
 }
-
-@keyframes rotate {
-    0%   {-webkit-transform: rotate(0deg);}
-    100%   {-webkit-transform: rotate(2160deg);}
-}
-  .rotation2{
-      color: black;
-  }
-  /* The element to apply the animation to */
-  .rotation2:hover {
-    animation-name: rotate;
-    animation-duration: 7s;
-    animation-iteration-count: 1;
-    animation-play-state: running;
-    z-index: 2;
-}
-
 
   
 @media screen and (max-width: 576px) {

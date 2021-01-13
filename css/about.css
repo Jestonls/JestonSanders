@@ -41,9 +41,16 @@
     position: absolute;
 }
 
-
+#smallBio{
+    max-width: 80vw;
+    left: 10vw;
+}
 @media screen and (max-width: 576px) {
-   .headerText{
+  #smallBio{
+      max-width: 80vw;
+      left: 10vw;
+  }
+    .headerText{
         font-size: 8vh;
    }
 
@@ -89,7 +96,12 @@
 }
 
 .smallNav{
-    font-size: 6vh;
+    font-size: 3vh;
+    display: block;
+    position: relative;
+    background-color: white;
+    text-align: right;
+    line-height: 200%;
 }
 
 }
