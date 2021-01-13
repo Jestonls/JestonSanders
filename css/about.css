@@ -46,10 +46,11 @@
     left: 10vw;
 }
 @media screen and (max-width: 576px) {
-  #smallBio{
-      max-width: 80vw;
-      left: 10vw;
-  }
+    
+    
+    #list-item-b{
+        display: none;
+    }
     .headerText{
         font-size: 8vh;
    }
