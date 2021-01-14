@@ -12,7 +12,7 @@
 <div class='row'>
 <div id='first' class='d-sm-none d-md-block col-sm-12 col-md-6 col-lg-6'>
 </div>
-<div id='backImg' class='col-lg-2 col-md-2 img-responsive'>
+<div id='backImg' class='d-sm-none d-md-block col-lg-2 col-md-2 img-responsive'>
 </div>
 
 
@@ -28,10 +28,6 @@
 <div id='galleryskillsWeb' class='col-lg-12 col-md-12 scrollXSmall'>
 </div>
 </div>
-
-<a href='#list-item-2'>
-  <h1 class="col-md-12 col-sm-12 text-center">&#8595;</h1>
-  </a>
 
 <h4 id='list-item-2'>
 <div class='text-center text-uppercase p-2 displayHeaderSmall'>
@@ -100,7 +96,7 @@ var portfolioWeb = [
     img3.attr({'src': portfolioGd[k].link, 'title': portfolioGd[k].name});
     img3.hover(
       function () {
-        $('#first').text(portfolioGd[k].name).css({'font-size' : '10vh', 'overflow': 'hidden', 'text-align': 'center', 'position': 'absolute', 'height': '100%', 'color':'black', 'padding-top':'25vh'});
+        $('#first').text(portfolioGd[k].name).css({'font-size' : '10vh', 'overflow': 'hidden', 'text-align': 'center', 'position': 'absolute', 'height': '100%', 'color':'grey', 'padding-top':'25vh'});
         $('#backImg').html($("<img class='col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive'>").attr("src", portfolioGd[k].link));
       });
     img3.appendTo('#galleryGd');
@@ -118,7 +114,7 @@ var portfolioWeb = [
     { name: "jquery" ,link: "../images/webskills/Logo_jQuery.svg"},
     { name: "react" ,link: "../images/webskills/React-icon.svg"},
     { name: "gitbash" ,link: "../images/webskills/Git-logo.svg"},
-    { name: "github" ,link: "../images/webskills/Github.com-SunghanKim.png"},
+    { name: "github" ,link: "../images/webskills/githubtextlogo.png"},
     { name: "node.js" ,link: "../images/webskills/Node.js_logo.svg"},
     { name: "heroku" ,link: "../images/webskills/Logo_di_Heroku.png"},
     { name: "mysql" ,link: "../images/webskills/Database-mysql.svg"},

@@ -54,19 +54,33 @@ Contact
 <div data-spy='scroll' data-target='#list-example' data-offset='0' class='scrollspy-example carouselScriptb'>
 
 <div id='list-item-a'>  
-<iframe src="./embedded/listOfSkills.html" style="width:100%;height:100vh;display:block;" sandbox="allow-same-origin allow-scripts allow-forms" scrolling="no"></iframe>
+<iframe id="h280" src="./embedded/listOfSkills.html" style="width:100%;height:100vh;display:block;" sandbox="allow-same-origin allow-scripts allow-forms" scrolling="no"></iframe>
 </div>
 <br>
+
+<a href="embedded/carouselScriptb.html" target="_blank"><h5 class="text-right">sample projects</h5></a>
+
 <div id="list-item-b">
-<iframe src="./embedded/carouselScriptb.html" style="width:100%;height:100vh;display:block;" sandbox="allow-same-origin allow-scripts allow-forms" scrolling="no"></iframe>
+  <iframe src="./embedded/carouselScriptb.html" style="width:100%;height:100vh;display:block;" sandbox="allow-same-origin allow-scripts allow-forms" scrolling="no"></iframe>
 </div>
 <br>
 
 <div id="list-item-c">
-<iframe src="./embedded/biography.html" style="width:100%;height:100vh;display:block;" sandbox="allow-same-origin allow-scripts allow-forms"></iframe>
+<iframe id="h200" src="./embedded/biography.html" style="width:100%;height:100vh;display:block;" sandbox="allow-same-origin allow-scripts allow-forms" scrolling="no"></iframe>
 </div>
 <br>
-    
+    <style>
+      
+@media screen and (max-width: 576px) {
+#h280{
+  min-height: 260vh;
+}
+#h200{
+  min-height: 200vh;
+}
+}
+
+    </style>
 <div id="list-item-d">
 
 <div class='row' id="footer">
@@ -85,7 +99,7 @@ Bay Area & Sacramento
   
   <button class="btn btn-lg border border-light btn btn-danger mb-3" id="contact">contact</button>
 
-<embed id="contactForm" src="./embedded/footerForm.html" style="width:100%;height:100vh;display:block;visibility:hidden;right:50%;z-index: 3;" sandbox="allow-same-origin allow-scripts allow-forms" scrolling="no"></iframe>
+<iframe id="contactForm" src="./embedded/footerForm.html" style="width:100%;height:100vh;display:block;visibility:hidden;right:50%;z-index: 3;" sandbox="allow-same-origin allow-scripts allow-forms" scrolling="no"></iframe>
 </h3>
 
 </div>
@@ -136,6 +150,7 @@ Bay Area & Sacramento
   </script>        
   
 </div>
+
 <script src="./javascripts/app.js"> 
 
 

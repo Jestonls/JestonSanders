@@ -10,7 +10,6 @@
     bottom: -30px;
     padding: 0 0 10vh 0;
 }
-
 .bootie{
     position: relative;
 }
@@ -52,7 +51,7 @@
         display: none;
     }
     .headerText{
-        font-size: 8vh;
+        font-size: 6vh;
    }
 
 
@@ -151,21 +150,6 @@
 }
 
 
-.popover-header {
-    font-size: 4vh;
-    color: white;
-    background-color: black;
-}
-.popover-body {
-    font-size: 3vh;
-    color: white;
-    background-color: black;
-}
-.popover {
-    z-index: 1;
-    min-width: 44vw;
-    left: -50vw !important;
-}
 #backImg {
     position: relative;
     max-height: 10vh;
